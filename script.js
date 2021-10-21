@@ -97,9 +97,11 @@ const newFilter = (array, callBack) => {
   return newArr;
 };
 
-// const newConcat = () => {
+const newConcat = (array1, array2) => {
+  let newArray = [...array1, ...array2];
 
-// }
+  return newArray;
+};
 
 const newIncludes = (array, elt) => {
   for (let i = 0; i < array.length; i++) {
